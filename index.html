@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   
@@ -12,35 +13,34 @@
       
       <div>
 
-        <h1>Calculo Juros Composto</h1>
-
-        <h2>Simulador</h2>
-
-        <form action="post.html" method="post">
+        <form action="post.html">
           <div id="container">
-            <div>
-              <label for="name">Nome</label>
+            <h1>Calculo Juros Composto</h1>
+
+            <h2>Simulador</h2>
+
+            <div id="input-form">
+              <label for="name">Nome</label><br>
               <input type="text" name="name" id="name">
             </div>
             
-            <div>
-              <label for="monthly">Mensalidade</label>
+            <div id="input-form">
+              <label for="monthly">Mensalidade</label><br>
               <input type="text" name="monthly" id="monthly">
             </div>
 
-            <div>
-              <label for="time">Tempo</label>
+            <div id="input-form">
+              <label for="time">Tempo</label><br>
               <input type="text" name="time" id="time">
             </div>
 
-            <div>
-              <label for="tax">Juros</label>
+            <div id="input-form">
+              <label for="tax">Juros</label><br>
               <input type="text" name="tax" id="tax">
             </div>
+            <button id="input-form">Simular</button>
           </div>
-
-          <button>Simular</button>
-
+          
         </form>
       </div>
     </section>
