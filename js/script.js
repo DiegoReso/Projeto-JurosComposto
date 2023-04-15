@@ -28,7 +28,7 @@ const calc = {
  .then(resolve => resolve.json())
  .then(data =>{
 
-    const result = parseFloat(data.result).toFixed(2)
+    const result = parseFloat(data.result)
     const span = document.querySelector('#span')
 
     if(!name_input.value || !monthly.value || !time.value || !tax.value){
@@ -46,7 +46,7 @@ const calc = {
 
       containter_inputs.innerHTML = 
       `
-      <h1> Olá ${name_input.value}, juntando R$: ${monthlyParse} todo mês você terá R$: ${result} em ${timeParse} meses.
+      <h1> Olá ${name_input.value}, juntando ${monthlyParse.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} reais todo mês você terá ${result.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} reais em ${timeParse / 12} anos.</h1>
 
       <button id="btn-return"> Similar novamente </button>
       `
