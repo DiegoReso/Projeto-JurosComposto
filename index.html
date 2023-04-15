@@ -13,38 +13,38 @@
       
       <div>
 
-        <form action="post.html">
+        <form id="form">
           <div id="container">
             <h1>Calculo Juros Composto</h1>
 
             <h2>Simulador</h2>
+              <div id="container-inputs">
+                <div id="input-form">
+                  <label for="name">Nome</label><br>
+                  <input type="text" name="name" id="name">
+                </div>
+                
+                <div id="input-form">
+                  <label for="monthly">Mensalidade</label><br>
+                  <input type="text" name="monthly" id="monthly">
+                </div>
 
-            <div id="input-form">
-              <label for="name">Nome</label><br>
-              <input type="text" name="name" id="name">
-            </div>
-            
-            <div id="input-form">
-              <label for="monthly">Mensalidade</label><br>
-              <input type="text" name="monthly" id="monthly">
-            </div>
+                <div id="input-form">
+                  <label for="time">Tempo</label><br>
+                  <input type="text" name="time" id="time">
+                </div>
 
-            <div id="input-form">
-              <label for="time">Tempo</label><br>
-              <input type="text" name="time" id="time">
-            </div>
-
-            <div id="input-form">
-              <label for="tax">Juros</label><br>
-              <input type="text" name="tax" id="tax">
-            </div>
-            <button id="input-form">Simular</button>
+                <div id="input-form">
+                  <label for="tax">Juros</label><br>
+                  <input type="text" name="tax" id="tax">
+                </div>
+                <button id="btn">Simular</button>
+             </div>
           </div>
-          
         </form>
       </div>
     </section>
 
-
+<script src="/js/script.js"></script>
 </body>
 </html>
