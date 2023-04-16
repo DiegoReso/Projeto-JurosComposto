@@ -34,7 +34,7 @@ const calc = {
     if(!name_input.value || !monthly.value || !time.value || !tax.value){
       
       span.classList.add('error')
-      span.textContent = 'Preencha os dados corretamente'
+      span.textContent = 'Preencha todos os dados'
 
       
     }else{
