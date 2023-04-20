@@ -1,12 +1,13 @@
- const btn = document.querySelector('#btn')
-
- tax.addEventListener('keyup', function(e){
+  
+  
+  tax.addEventListener('keyup', function(e){
   const el = e.target
   if (el.value.includes(',')) {
     el.value = el.value.replace(/,/g, '.')
   }
  })
 
+ const btn = document.querySelector('#btn')
 
  btn.addEventListener('click', event => {
    event.preventDefault()
@@ -51,8 +52,7 @@ const calc = {
       span.classList.remove('error')
       span.textContent = ''
 
-      
-
+    
       containter_inputs.innerHTML = 
       `
       <h1> Olá ${name_input.value}, juntando ${monthlyParse.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} reais todo mês você terá ${result.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} reais em ${timeParse / 12} anos.</h1>

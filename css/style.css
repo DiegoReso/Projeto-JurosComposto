@@ -1,16 +1,28 @@
 #container{
   width: 500px;
-  height: 400px;
+  height: 450px;
   border: 1px solid black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   margin: auto;
   border-radius: 5px;
+  background-color: rgb(194, 194, 221);
+  margin-top: 50px;
+}
+
+body{
+  background-color: rgb(159, 221, 213);
 }
 
 #input-form{
   margin: 10px;
   
+  
+}
+
+label{
+  position: absolute;
+  left: 28%;
 }
 
 input{
@@ -19,6 +31,8 @@ input{
   outline-style: none;
   padding: 8px;
   width: 200px;
+  font-size: 18px;
+
 }
 
 .hide{
@@ -44,6 +58,14 @@ input{
 }
 
 #btn-return{
-
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
   margin-top: 30px;
+}
+
+#btn{
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
 }

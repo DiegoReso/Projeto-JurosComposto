@@ -26,17 +26,17 @@
                 
                 <div id="input-form">
                   <label for="monthly">Mensalidade</label><br>
-                  <input type="text" name="monthly" id="monthly">
+                  <input type="text" name="monthly" id="monthly" oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
                 </div>
 
                 <div id="input-form">
-                  <label for="time">Tempo</label><br>
-                  <input type="text" name="time" id="time">
+                  <label for="time">Tempo Contribuição</label><br>
+                  <input type="text" name="time" id="time" oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
                 </div>
 
                 <div id="input-form">
-                  <label for="tax">Juros</label><br>
-                  <input type="text" name="tax" id="tax">
+                  <label for="tax">Taxa de Juros</label><br>
+                  <input type="text" name="tax" id="tax" oninput="this.value = this.value.replace(/[^0-9,.]/g, '').replace(/(\..*?)\..*/g, '$1');">
                 </div>
 
                 <button id="btn">Simular</button>
