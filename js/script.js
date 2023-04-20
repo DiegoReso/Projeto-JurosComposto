@@ -1,5 +1,13 @@
  const btn = document.querySelector('#btn')
 
+ tax.addEventListener('keyup', function(e){
+  const el = e.target
+  if (el.value.includes(',')) {
+    el.value = el.value.replace(/,/g, '.')
+  }
+ })
+
+
  btn.addEventListener('click', event => {
    event.preventDefault()
 
@@ -13,6 +21,7 @@
   const timeParse = parseFloat(time.value)
   const taxParse = (parseFloat(tax.value) / 100)
   
+
 
 const calc = {
   expr: `${monthlyParse} * (((1 + ${taxParse}) ^ ${timeParse} - 1) / ${taxParse})`
@@ -48,17 +57,10 @@ const calc = {
       `
       <h1> Olá ${name_input.value}, juntando ${monthlyParse.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} reais todo mês você terá ${result.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} reais em ${timeParse / 12} anos.</h1>
 
-      <button id="btn-return"> Similar novamente </button>
+      <button id="btn-return"> Simular novamente </button>
       `
     }
-   
-    
-
-
-
  })
-
- 
  })
 
 

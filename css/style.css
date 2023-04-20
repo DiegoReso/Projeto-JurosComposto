@@ -5,10 +5,20 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   margin: auto;
+  border-radius: 5px;
 }
 
 #input-form{
   margin: 10px;
+  
+}
+
+input{
+  border-radius: 5px;
+  border: 1px solid black ;
+  outline-style: none;
+  padding: 8px;
+  width: 200px;
 }
 
 .hide{
