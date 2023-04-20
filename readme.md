@@ -16,4 +16,4 @@ Tempo de contribuição: 2 anos
 
 Segunda tela:
 
-A segunda tela deverá exibir um texto com as informaçoes dos campos de nome, mensalidade, tempo e o resultado da request.
+A segunda tela deverá exibir um texto com as informações dos campos de nome, mensalidade, tempo e o resultado da request.
